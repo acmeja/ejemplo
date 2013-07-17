@@ -1,0 +1,32 @@
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Nueva Tabla</title>
+	<link rel="stylesheet" type="text/css" href="../estilos/estilogral.css">
+	<script type="text/javascript" src="../lib/lib_fun.js"></script>
+	<script type="text/javascript" src="tablas.js"></script>
+</head>
+<body>
+	<div align='center'id="divtblnom" name='divtblnom' ></div>
+	<br>
+	<div align="center" id="divnvatabla" name="divnvatabla">
+		<form name='frmtbl'>
+			<table>
+				<tr>
+					<td>Nombre de la tabla:</td>
+					<td><input type="text" name="txttbl[]"  id="txttblnom"  required size="30" onblur="validar_input('nombre',this,'divnom');">       <div id="divnom" class='divmsj'></div></td>
+				</tr>
+				<tr>
+					<td>Número de Columnas:</td>
+					<td><input type="text" name="txttbl[]" id="txtnumcols" required size="5" onblur="validar_input('numero',this,'divnum');" value="1"><div id='divnum' class='divmsj'></div></td>
+				</tr>
+
+			</table>			
+			
+			<input type="button" value="Siguiente" onclick="javascript:validacion_tabla();">
+		</form>
+	</div>
+ 	<div id="divlsttpo"></div>
+</body>
+</html>

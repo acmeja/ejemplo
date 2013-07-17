@@ -1,0 +1,69 @@
+
+body
+{
+	font-size: 12px;
+	font-family: tahoma;
+}
+/*#slc_bd,#slc_tbla,#btn_add,#btn_add_bd,#btn_mod,#btn_del
+{
+	font-size: 12px;
+	font-family: tahoma;
+}*/
+.boton1
+{
+	font-size: 12px;
+	font-family: tahoma;	
+}
+.input1
+{
+	font-size: 12px;
+	font-family: tahoma;	
+}
+
+.etiqueta
+{
+	font-size: 12px;
+	font-family: tahoma;
+}
+
+.mensaje
+{
+	font-size: 12px;
+	font-family: tahoma;
+	color:#F00;
+}
+
+.registro0
+{
+	font-size: 12px;
+	font-family: tahoma;
+	background-color:#CACACA;
+}
+
+.registro1
+{
+	font-size: 12px;
+	font-family: tahoma;
+	background-color:#E8E8E8;
+}
+
+.encabezado
+{
+	text-align:center;
+	text-transform:capitalize;
+	font-size: 12px;
+	font-family: tahoma;
+	background-color:#039;
+	color:#FFF;
+}
+
+.anterior, .siguiente
+{
+	border:1px solid #7d99ca;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background-color: #A5B8DA;
+	text-decoration: none;
+	color:#000;
+}

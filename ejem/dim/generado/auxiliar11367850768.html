@@ -1,0 +1,32 @@
+<script type='text/javascript' src='../lib/libreria.js'></script>
+	<script type='text/javascript' src='../lib/SpryAssets/SpryValidationTextField.js'></script>
+	<link href='../lib/SpryAssets/SpryValidationTextField.css' rel='stylesheet' type='text/css'/>
+	<link rel='stylesheet' type='text/css' href='../estilos/estilogral.css'>
+	<b>Ingrese los datos correspondientes:</b>
+	<hr>
+	<br>
+	<table width=''><tr><td width='50%' align='right'><form action='../captura/alta.php' name='formAdd' method='post' target='_top'><p><span id="sprytextfield0">
+               <label for="columna0" class="etiqueta">id          </label>
+               <input type="text" name="columna0" id="columna0"  value='' />
+               <span class="textfieldRequiredMsg">Se necesita un valor.</span><span class="textfieldInvalidFormatMsg">Formato no válido.</span></span>
+               <script type="text/javascript">
+               var sprytextfield1 = new Spry.Widget.ValidationTextField("sprytextfield0", "integer", {validateOn:["blur", "change"]});
+               </script></p><p><span id="sprytextfield1">
+               <label for="columna1" class="etiqueta">precio      </label>
+               <input type="text" name="columna1" id="columna1"  value='' />
+               <span class="textfieldRequiredMsg">Se necesita un valor.</span><span class="textfieldInvalidFormatMsg">Formato no válido.</span></span>
+               <script type="text/javascript">
+               var sprytextfield1 = new Spry.Widget.ValidationTextField("sprytextfield1", "real", {validateOn:["blur", "change"]});
+               </script></p><p><span id="sprytextfield2">
+              <label for="columna2" class="etiqueta">nombre      </label>
+              <input type="text" name="columna2" id="columna2"  value=''/>
+              <span class="textfieldRequiredMsg">Se necesita un valor.</span><span class="textfieldMinCharsMsg">No se cumple el mínimo de caracteres requerido.</span><span class="textfieldMaxCharsMsg">Se ha superado el número máximo de caracteres.</span></span></span>
+              <script type="text/javascript">
+              var sprytextfield1 = new Spry.Widget.ValidationTextField("sprytextfield2", "none", {minChars:0, maxChars:45,validateOn:["blur","change"]});
+              </script></p><p><span id="sprytextfield3">
+               <label for="columna3" class="etiqueta">fecha       </label>
+               <input type="text" name="columna3" id="columna3"  value='' />
+               <span class="textfieldRequiredMsg">Se necesita un valor.</span></span><span class="textfieldInvalidFormatMsg">Formato no válido.</span></span>
+               <script type="text/javascript">
+               var sprytextfield1 = new Spry.Widget.ValidationTextField("sprytextfield3", "date", {validateOn:["blur", "change"], format:"yyyy-mm-dd",              hint:"aaaa-mm-dd"});
+               </script></p><input type='hidden' name='agregar' value='si'/><input type='hidden' name='colsx'/><input type='hidden' name='nameTable'/><input type = 'submit' value='Guardar' onclick='javascript:enviaAdd(document.formAdd,4,"tabla4    ");' id='botonGenerado'/></form></td><td></td></tr></table>

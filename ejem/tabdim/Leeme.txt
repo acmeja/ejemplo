@@ -1,0 +1,3 @@
+Se actualizó la página index.
+En la carpeta lib se agregaron las librerias creadas
+La carpeta captura contiene las demás páginas creadas.

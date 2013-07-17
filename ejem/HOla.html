@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>Beginner AJAX Tutorial - Progress Bar</title>
+ 
+	<script type="text/javascript" src="yahoo.js"> </script>
+	<script type="text/javascript" src="event.js"> </script>
+	<script type="text/javascript" src="connection.js"> </script>
+ 
+	<script type="text/javascript">
+		function success_handler(o) {
+			replace_html('content', o.responseText);
+		}
+ 
+		function failure_handler(o) 
+		{
+			replace_html('content', 'Server or your connection is death');
+		}
+ 
+		function replace_html(id, content)
+		 {
+			document.getElementById(id).innerHTML = content;
+		}
+ 
+		function show_progressbar(id) {
+			replace_html(id, '<img src="http://images.code-head.com/progress-bars/4.gif" border="0" alt="Loading, please wait..." />');
+		}
+ 
+		function send_request() {
+			show_progressbar('content');
+			var callback = { success:success_handler,	failure:failure_handler, timeout: 10000 };
+			YAHOO.util.Connect.asyncRequest('GET', 'http://images.code-head.com/tutorials/ajax/beginner-ajax-tutorial.php', callback);
+		}
+ 
+		function test_failure() {
+			show_progressbar('content');
+			var callback = { success:success_handler,	failure:failure_handler, timeout: 10000 };
+			YAHOO.util.Connect.asyncRequest('GET', 'http://images.code-head.com/tutorials/ajax/some-file-that-doesnt-exists.php', callback);
+		}
+ 
+		var progress_bar = new Image();
+		progress_bar.src = 'http://images.code-head.com/progress-bars/4.gif';
+	</script>
+ 
+</head>
+ 
+<body>
+<a href="javascript:send_request();">Send Request</a> | <a href="javascript:test_failure();">Fail a request</a>
+<div id="content">
+ 
+</div>
+</body>
+</html>

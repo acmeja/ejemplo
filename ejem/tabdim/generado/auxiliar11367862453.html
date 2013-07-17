@@ -1,0 +1,14 @@
+<script type='text/javascript' src='../lib/libreria.js'></script>
+	<script type='text/javascript' src='../lib/SpryAssets/SpryValidationTextField.js'></script>
+	<link href='../lib/SpryAssets/SpryValidationTextField.css' rel='stylesheet' type='text/css'/>
+	<link rel='stylesheet' type='text/css' href='../estilos/estilogral.css'>
+	<b>Ingrese los datos correspondientes:</b>
+	<hr>
+	<br>
+	<table width=''><tr><td width='50%' align='right'><form action='../captura/alta.php' name='formAdd' method='post' target='_top'><p><span id="sprytextfield0">
+              <label for="columna0" class="etiqueta">fsff        </label>
+              <input type="text" name="columna0" id="columna0"  value=''/>
+              <span class="textfieldRequiredMsg">Se necesita un valor.</span><span class="textfieldMinCharsMsg">No se cumple el mínimo de caracteres requerido.</span><span class="textfieldMaxCharsMsg">Se ha superado el número máximo de caracteres.</span></span></span>
+              <script type="text/javascript">
+              var sprytextfield1 = new Spry.Widget.ValidationTextField("sprytextfield0", "none", {minChars:0, maxChars:45,validateOn:["blur","change"]});
+              </script></p><input type='hidden' name='agregar' value='si'/><input type='hidden' name='colsx'/><input type='hidden' name='nameTable'/><input type = 'submit' value='Guardar' onclick='javascript:enviaAdd(document.formAdd,1,"tabla_prueba        ");' id='botonGenerado'/></form></td><td></td></tr></table>
